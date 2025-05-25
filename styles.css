@@ -1,0 +1,138 @@
+:root{
+    --green:hsl(75, 94%, 57%);
+    --white:hsl(0, 0%, 100%);
+    --lightGray:hsl(0, 0%, 20%);
+    --middleGray:hsl(0, 0%, 12%);
+    --darkGray:hsl(0, 0%, 8%);
+    
+    --fontSize:14px;
+
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-Regular.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+    font-weight: 700;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+    font-weight: 700;
+    font-style: bolder;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 14px;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    background-color: var(--darkGray);
+}
+
+main{
+    display: block;
+    margin:8% 38% 2%;
+}
+
+#container{
+    background-color: var(--middleGray);
+    width: 90%;
+    height: 69vh;
+    border-radius: 4.5%/2.5%;
+    padding: 2.5rem;
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+
+.text-directory{
+    display: grid;
+    grid-template-rows: 3fr 1fr 1fr 1fr;
+}
+
+#authorIcon{
+    border-radius: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 1.7rem;
+    margin-inline: 36%;
+}
+
+#name{
+    color: var(--white);
+        font-style: bold;
+        font-size: 1.6rem;
+        font-weight: 610;
+        letter-spacing: 2%;
+}
+
+#adress{
+    color: var(--green);
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 1%;
+}
+
+#description{
+    color: #c3c3c3;
+    margin-top: 1.5%;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.6rem;
+    padding-top: 0.5rem;
+}
+
+.navigation{
+    color: var(--white);
+    background-color: var(--lightGray);
+    height: 5.1vh;
+    border-radius: 0.4rem/0.4rem;
+    padding-top: 5%;
+    font-size: 0.9rem;
+    font-weight: 700;
+    width: 95%;
+    margin: auto;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
+}
+
+.navigation:hover{
+    background-color: var(--green);
+    color: var(--darkGray);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in;
+}
+
+
+@media screen and(max-width:375px){
+
+}
+
+.attribution{
+    display: none;
+}
